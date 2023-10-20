@@ -1,0 +1,21 @@
+.H1T1::after {
+    content: "";
+    position: absolute;
+    right: 6rem;
+    z-index: -1;
+    border-bottom: 100px solid transparent;
+    border-left: 500px solid transparent;
+    box-shadow: 1px 1px 0 1px black;
+    margin-top: 1rem;
+}
+
+.H2T1::after {
+    content: "";
+    position: absolute;
+    left: -1rem;
+    z-index: -1;
+    border-bottom: 100px solid transparent;
+    border-left: 500px solid transparent;
+    box-shadow: -1px 1px 0 1px black;
+    margin-top: 1.5rem;
+}
