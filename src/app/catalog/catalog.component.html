@@ -1,0 +1,21 @@
+<div *ngFor="let item of items">
+    <div class="w-[422px] h-[647px] bg-white">
+        <div>
+            <img src="../../assets/Images/{{item.picture}}" alt="">
+        </div>
+    
+        <div class="p-5 border-black border-b-2 border-l-2 border-r-2">
+            <h3 style="font-size: 32px; letter-spacing: 0.2rem;">{{item.name}}</h3>
+            <h3 style="font-size: 32px; letter-spacing: 0.2rem;" class="opacity-50">DIMENSIONS: <br>{{item.dimensions}}</h3>
+            <div class="flex flex-row justify-between">
+                <h3 style="font-size: 32px; letter-spacing: 0.2rem;" class="opacity-75">${{item.price | number:'1.2-2'}}</h3>
+                <div class="flex flex-row gap-4">
+                    <img width="32px" class="object-contain hover:cursor-pointer hover:scale-95 transition-all duration-150" src="../../assets/Icons/heart 1.png" alt="">
+                    <img width="32px" class="object-contain hover:cursor-pointer hover:scale-95 transition-all duration-150" src="../../assets/Icons/cart 1.png" alt="">
+                    <button class="my-auto pl-3 h-10 pt-2" style="font-size: 15px !important;">BUY <span><img class="pt-1 ml-10 mr-5" src="../../assets/Images/right-arrow 1.png" width="13px"></span></button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
