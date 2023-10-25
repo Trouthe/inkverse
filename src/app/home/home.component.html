@@ -1,43 +1,121 @@
-<app-navigation></app-navigation>
+<div class="max-w-[1879px] mr-auto ml-auto">
+    <app-navigation></app-navigation>
 
-<!-- HEADER -->
-<div class="my-20">
-    <div class="flex flex-row items-center justify-between px-20">
-        <h1 style="font-size: 80px">ANIME<span class="text-stroke pl-10 font-bold">アニメーション</span></h1>
-        <img src="../../assets/Images/Untitled-2 1.png" alt="">
-    </div>
-    <div class="flex flex-row items-center justify-between px-20">
-        <img src="../../assets/Images/Group 1.png" alt="">
-        <h1 class="H1T1" style="font-size: 80px; letter-spacing: 3rem;">INKVERSE</h1>
-    </div>
+    <!-- HEADER -->
+    <div class="my-20">
+        <div class="flex flex-row items-center justify-between px-20">
+            <h1 style="font-size: 80px">ANIME<span class="text-stroke pl-10 font-bold">アニメーション</span></h1>
+            <img src="../../assets/Images/Untitled-2 1.png" alt="">
+        </div>
+        <div class="flex flex-row items-center relative justify-between px-20">
+            <img src="../../assets/Images/Group 1.png" alt="">
+            <h1 class="H1T1" style="font-size: 80px; letter-spacing: 3rem;">INKVERSE</h1>
+        </div>
 
-    <!-- BODY -->
-    <div class="flex flex-row mx-10 my-20">
-        <img class="object-contain" src="../../assets/Images/LeftArt.png" alt="">
-        <div class="flex flex-col mx-auto text-center">
-            <h3 style="font-size: 64px; letter-spacing: 1.25rem;">ENCHANTING ANIME GLASS ART</h3>
-            <p style="font-size: 30px;" class="px-52">Craft a vibrant world where lively characters and colorful landscapes spring to life in the captivating realm of anime-inspired glass art</p>
-            <div class="flex flex-row justify-between">
-                <button class="ml-40 my-auto pl-3 h-16 pt-2">BROWSE <span><img class="pt-1 ml-10 mr-2" src="../../assets/Images/right-arrow 1.png" width="35px"></span></button>
-                <img src="../../assets/Images/RightArt.png" alt="">
+        <!-- BODY -->
+        <div class="flex flex-row mx-10 my-20">
+            <img class="object-contain" src="../../assets/Images/LeftArt.png" alt="">
+            <div class="flex flex-col mx-auto text-center">
+                <h3 style="font-size: 64px; letter-spacing: 1.25rem;">ENCHANTING ANIME GLASS ART</h3>
+                <p style="font-size: 30px;" class="px-52">Craft a vibrant world where lively characters and colorful landscapes spring to life in the captivating realm of anime-inspired glass art</p>
+                <div class="flex flex-row justify-between">
+                    <button class="ml-40 my-auto pl-3 h-16 pt-2">BROWSE <span><img class="pt-1 ml-10 mr-2" src="../../assets/Images/right-arrow 1.png" width="35px"></span></button>
+                    <img src="../../assets/Images/RightArt.png" alt="">
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- CATALOG -->
-<div class="my-20">
-    <!-- HEADING -->
-    <div class="flex flex-row items-center justify-between mx-20 relative">
-        <div>
-            <h3 class="H2T1" style="font-size: 100px; letter-spacing: 3rem;">CATALOG</h3>
-            <h3 style="font-size: 100px; letter-spacing: 3rem;" class="text-stroke absolute top-1 left-1">CATALOG</h3>
+    <!-- CATALOG -->
+    <div class="my-20">
+        <!-- HEADING -->
+        <div class="flex flex-row items-center justify-between mx-20 relative">
+            <div>
+                <h3 class="H2T1" style="font-size: 100px; letter-spacing: 3rem;">CATALOG</h3>
+                <h3 style="font-size: 100px; letter-spacing: 3rem;" class="text-stroke absolute top-1 left-1">CATALOG</h3>
+            </div>
+
+            <img class="h-[80px] mb-2" src="../../assets/Images/CATALOGBARCODE.png">
         </div>
 
-        <img class="h-[80px] mb-2" src="../../assets/Images/CATALOGBARCODE.png">
+        <!-- ITEMS -->
+        <app-catalog class="flex flex-row mx-24 my-20 justify-between gap-20 flex-wrap"></app-catalog>
     </div>
 
-    <!-- ITEMS -->
-    <app-catalog class="flex flex-row mx-24 my-20 justify-between gap-20 flex-wrap"></app-catalog>
-    <h1 class="text-5xl text-center">I'LL BE WORKING ON IT SHUT UP I'M TIRED</h1>
+    <!-- Custom Order -->
+    <div class="mx-32 my-20 relative">
+        <div class="relative">
+            <h3 class="text-justify" style="font-size: 100px; letter-spacing: 3rem;">CAN’T FIND WHAT YOU’RE LOOKING FOR?</h3>
+            <h3 class="text-justify text-stroke absolute top-1 left-1 -mr-1" style="font-size: 100px; letter-spacing: 3rem;">CAN’T FIND WHAT YOU’RE LOOKING FOR?</h3>
+        </div>
+
+        <div class="flex flex-row justify-between my-20">
+            <div class="w-[40%]">
+                <p class="text-5xl font-extralight leading-loose text-justify">
+                    We take pride in crafting 
+                    <span class="text-white bg-black p-1">custom</span>
+                    orders to match 
+                    <span class="text-white bg-black p-1">your</span>
+                    individual preferences and ideas, making your 
+                    <span class="text-white bg-black p-1">imagination</span>
+                    come true.
+                    </p>
+            </div>
+            <div class="">
+                <img src="../../assets/Images/Group 17.png" alt="">
+            </div>
+        </div>
+        <img class="absolute -bottom-5" src="../../assets/Images/Group 15.png" alt="">
+    </div>
+
+    <!-- Custom Order Parameters -->
+    <div class="mx-32 my-20">
+        <div class="flex flex-col items-center">
+            <!-- Anime Name -->
+            <div class="flex flex-row w-full">
+                <h3 style="font-size: 37px; letter-spacing: 30px;" class="pl-5 py-2 border-2 border-black w-[40%]">Anime Name</h3>
+                <input style="font-size: 37px" class="px-3 border-2 border-black w-[60%] border-l-0" type="text" placeholder=". . .">
+            </div>
+
+            <!-- Anime Characters -->
+            <div class="flex flex-row w-full -top-[1px] relative">
+                <h3 style="font-size: 37px; letter-spacing: 30px;" class="pl-5 py-2 relative border-2 border-black border-t-0 w-[40%]">Character(s)</h3>
+                <input style="font-size: 37px" type="text" class="px-3 border-2 border-black w-[60%] border-t-[1px] border-l-0" placeholder=". . .">
+            </div>
+        </div>
+
+        <div class="my-5 flex flex-row">
+            <!-- Description -->
+            <div class="w-[65.56%]">
+                <h3 style="font-size: 37px; letter-spacing: 30px;" class="pl-5 py-2 border-2 border-r-0 border-black w-full">Description</h3>
+                <div class="h-full relative">
+                    <textarea style="font-size: 25px; letter-spacing: 3px;" name="" id="" class="w-full h-[83.7%] p-4 border-2 border-black border-t-0 border-r-0 resize-none" placeholder="Describe the way you want it!"></textarea>
+                    <img src="../../assets/Images/pngwing 1.png" alt="" class="absolute -top-3 right-0 -z-10 opacity-50" width="30%">
+                </div>
+            </div>
+
+            <!-- Dimensions -->
+            <div class="flex flex-row ">
+                <img src="../../assets/Images/Untitled-8 1.png" alt="" class="">
+
+                <div id="dimensions" class="relative" style="font-size: 30px">
+                    <h3 class="h-[25%] pt-9 px-5 border-b-[2px] border-t-[2px] border-black">25x25</h3>
+                    <h3 class="h-[25%] pt-9 px-5 border-b-[2px] border-black">30x30</h3>
+                    <h3 class="h-[25%] pt-9 px-5 border-b-[2px] border-black">60x40</h3>
+                    <h3 class="h-[25%] pt-9 px-5 border-b-[2px] border-black">75x75</h3>
+                </div>
+
+                <h3 style="font-size: 37px; letter-spacing: 30px; writing-mode: vertical-rl;" class=" left-0 pt-5 px-3 relative border-2 border-black">Dimensions</h3>
+            </div>
+        </div>
+
+        <div class="flex flex-row w-full">
+            <h3 style="font-size: 37px; letter-spacing: 30px;" class="pl-5 py-2 border-2 border-black w-[40%]">Phone Number</h3>
+            <input style="font-size: 37px" class="px-3 border-2 border-black w-[60%] border-l-0" type="number" placeholder=". . .">
+        </div>
+
+        <button class="mt-5 my-auto pl-3 h-16 pt-2">SUBMIT <span><img class="pt-1 ml-10 mr-2" src="../../assets/Images/right-arrow 1.png" width="35px"></span></button>
+    </div>
 </div>
+
+<app-footer></app-footer>

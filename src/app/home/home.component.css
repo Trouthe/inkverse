@@ -19,3 +19,12 @@
     box-shadow: -1px 1px 0 1px black;
     margin-top: 1.5rem;
 }
+
+#dimensions h3:hover {
+    background-color: rgb(220, 220, 220);
+    cursor: pointer;
+}
+
+textarea {
+    background-color: transparent;
+}
